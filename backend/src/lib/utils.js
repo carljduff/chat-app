@@ -11,6 +11,6 @@ export const generateToken = (userId, res) => {
         sameSite: "strict", //CSRF attacks prevention
         secure: process.env.NODE_ENV !== "development",
     });
-
+   
     return token;
 };
